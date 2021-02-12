@@ -15,7 +15,7 @@ const contact = require("./routes/contact.js");
 const customercontact = require("./routes/customerContact.js");
 const auth = require("./routes/auth.js");
 const app = express();
-
+//
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
 app.use(cors());
