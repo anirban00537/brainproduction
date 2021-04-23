@@ -15,7 +15,7 @@ const contact = require("./routes/contact.js");
 const customercontact = require("./routes/customerContact.js");
 const auth = require("./routes/auth.js");
 const app = express();
-//
+
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "100mb", extended: true }));
 app.use(cors());
@@ -24,7 +24,7 @@ app.use(express.static("images"));
 const CONNECTION_URL =
   "mongodb+srv://brainboxbd:brainboxbd@cluster0.7k23y.mongodb.net/3bmern?retryWrites=true&w=majority";
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 9000;
 
 mongoose
   .connect(CONNECTION_URL, {
